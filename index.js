@@ -18,11 +18,11 @@ app.get("/", (req, res) => {
 
 app.get("/marks", async (req, res) => {
     try {
-        const mark = await Marks.find({});
-        res.render("marks", { mark });
+        //const mark = await Marks.find({});
+        //res.render("marks", { mark });
         //const mark = req.body;
-        console.log(mark);
-        //res.render("marks", {mark});
+        //console.log(mark);
+        res.render("marks");
     }
     catch (e) {
         console.log(e);
